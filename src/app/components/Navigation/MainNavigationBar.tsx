@@ -8,7 +8,8 @@ import {
   CogIcon,
   PencilIcon,
   ArrowPathIcon,
-  ArrowRightStartOnRectangleIcon
+  ArrowRightStartOnRectangleIcon,
+  CameraIcon
 } from "@heroicons/react/24/outline";
 
 const MainNavigationBar: React.FC = () => {
@@ -77,6 +78,12 @@ const MainNavigationBar: React.FC = () => {
         >
           <PencilIcon className="w-5 h-5 mr-3" />
           Crear Post
+        </a>
+        <a
+          href="#"
+          className="flex items-center w-full py-2 px-4 rounded-lg hover:bg-gray-100 text-gray-700 font-medium">
+            <CameraIcon className="w-5 h-5 mr-3" />
+            Crear Historia
         </a>
       </nav>
 

@@ -7,6 +7,8 @@ import {
   ChatBubbleLeftIcon as ChatIcon,
   CogIcon,
   PencilIcon,
+  ArrowPathIcon,
+  ArrowRightStartOnRectangleIcon
 } from "@heroicons/react/24/outline";
 
 const MainNavigationBar: React.FC = () => {
@@ -77,6 +79,24 @@ const MainNavigationBar: React.FC = () => {
           Crear Post
         </a>
       </nav>
+
+      {/* Botones adicionales */}
+      <div className="flex flex-col w-full px-4 mt-auto">
+        <a
+          href="#"
+          className="flex items-center w-full py-2 px-4 rounded-lg hover:bg-gray-100 text-gray-700 font-medium mb-2"
+        >
+          <ArrowPathIcon className="w-5 h-5 mr-3" />
+          Cambiar de Perfil
+        </a>
+        <a
+          href="#"
+          className="flex items-center w-full py-2 px-4 rounded-lg text-gray-700 font-medium bg-black text-white hover:bg-gray-800 transition duration-200 mb-2"
+        >
+          <ArrowRightStartOnRectangleIcon className="w-5 h-5 mr-3" />
+          Cerrar Sesión
+        </a>
+      </div>
     </div>
   );
 };
